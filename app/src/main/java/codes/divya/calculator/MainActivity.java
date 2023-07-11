@@ -1,6 +1,5 @@
 package codes.divya.calculator;
 
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -60,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void button_multiply(View view) {
-        textView.append("X");
+        textView.append("*");
     }
 
     public void button_four(View view) {
