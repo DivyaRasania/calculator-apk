@@ -18,7 +18,7 @@
     <string name="plus">+</string>
     <string name="zero">0</string>
     <string name="decimal_point">.</string>
-    <string name="delete">⬅</string>
+    <string name="delete">&#9003;</string>
     <string name="equals">=</string>
     <string name="entered_number"> </string>
 </resources>

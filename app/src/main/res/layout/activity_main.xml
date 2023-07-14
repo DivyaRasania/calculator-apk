@@ -6,59 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--<EditText
-        android:id="@+id/numbers_view"
-        android:layout_width="351dp"
-        android:layout_height="167dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:ems="10"
-        android:text="@string/entered_number"
-        android:inputType="number"
-        android:textSize="50sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />-->
-
     <TextView
         android:id="@+id/numbers_view"
         android:layout_width="410dp"
         android:layout_height="200dp"
         android:text="@string/entered_number"
         android:textSize="50sp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
         android:id="@+id/c_button"
         style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="95dp"
+        android:layout_width="200dp"
         android:layout_height="80dp"
         android:onClick="button_clear"
         android:text="@string/clear"
         android:textColor="?android:textColorPrimary"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/seven_button"
-        app:layout_constraintEnd_toStartOf="@+id/bracket_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numbers_view" />
-
-    <Button
-        android:id="@+id/bracket_button"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="95dp"
-        android:layout_height="80dp"
-        android:onClick="button_brackets"
-        android:text="@string/bracket"
-        android:textColor="?android:textColorPrimary"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/eight_button"
         app:layout_constraintEnd_toStartOf="@+id/percent_button"
-        app:layout_constraintStart_toEndOf="@+id/c_button"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numbers_view" />
 
     <Button
@@ -72,7 +44,7 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/nine_button"
         app:layout_constraintEnd_toStartOf="@+id/divide_button"
-        app:layout_constraintStart_toEndOf="@+id/bracket_button"
+        app:layout_constraintStart_toEndOf="@+id/c_button"
         app:layout_constraintTop_toBottomOf="@+id/numbers_view" />
 
     <Button
@@ -115,7 +87,7 @@
         app:layout_constraintBottom_toTopOf="@+id/five_button"
         app:layout_constraintEnd_toStartOf="@+id/nine_button"
         app:layout_constraintStart_toEndOf="@+id/seven_button"
-        app:layout_constraintTop_toBottomOf="@+id/bracket_button" />
+        app:layout_constraintTop_toBottomOf="@+id/c_button" />
 
     <Button
         android:id="@+id/nine_button"

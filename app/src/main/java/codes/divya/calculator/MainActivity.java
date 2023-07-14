@@ -1,11 +1,10 @@
 package codes.divya.calculator;
 
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import org.mozilla.javascript.Context;
 import org.mozilla.javascript.Scriptable;
 
@@ -21,21 +20,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         textView = findViewById(R.id.numbers_view);
+        textView.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
+        textView.setGravity(Gravity.BOTTOM);
     }
 
     public void button_clear(View view) {
         textView.setText("");
-    }
-
-    public void button_brackets(View view) {
-        //TODO: make it so that you can make more than two brackets pair
-        all_characters = textView.getText().toString();
-
-        if (all_characters.length() > 0) {
-            textView.append(")");
-        } else {
-            textView.append("(");
-        }
     }
 
     public void button_percent(View view) {
