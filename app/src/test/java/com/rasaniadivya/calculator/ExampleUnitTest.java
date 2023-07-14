@@ -1,4 +1,4 @@
-package codes.divya.calculator;
+package com.rasaniadivya.calculator;
 
 import org.junit.Test;
 
