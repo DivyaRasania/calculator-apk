@@ -8,8 +8,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import org.mozilla.javascript.Context;
 import org.mozilla.javascript.Scriptable;
 import codes.divya.calculator.R;
-
-
 public class MainActivity extends AppCompatActivity {
 
     TextView textView;
